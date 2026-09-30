@@ -1,4 +1,3 @@
-import FadeIn from "@/components/FadeIn";
 
 export default function Hero() {
   return (
@@ -7,7 +6,7 @@ export default function Hero() {
       className="flex min-h-screen items-center px-6 pt-20"
     >
       <div className="mx-auto w-full max-w-6xl">
-        <FadeIn className="max-w-3xl">
+        <div className="max-w-3xl">
           <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-accent uppercase sm:text-sm">
             Frontend Developer
           </p>
@@ -53,7 +52,7 @@ export default function Hero() {
               Get In Touch
             </a>
           </div>
-        </FadeIn>
+        </div>
       </div>
     </section>
   );
