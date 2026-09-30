@@ -9,7 +9,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    "https://mona-portfolio-omega.vercel.app"
+  ),
+
   title: "Mona Safari | Frontend Developer",
+
   description:
     "Mona Safari is a Frontend Developer specializing in React, Next.js, TypeScript, and building modern, responsive web applications.",
 
@@ -39,18 +44,26 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
+    url: "https://mona-portfolio-omega.vercel.app",
     title: "Mona Safari | Frontend Developer",
     description:
       "Explore Mona Safari's portfolio, frontend projects, and experience with React, Next.js, and TypeScript.",
     siteName: "Mona Safari Portfolio",
     locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        alt: "Mona Safari | Frontend Developer",
+      },
+    ],
   },
 
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Mona Safari | Frontend Developer",
     description:
       "Frontend Developer specializing in React, Next.js, and TypeScript.",
+    images: ["/og-image.png"],
   },
 };
 
