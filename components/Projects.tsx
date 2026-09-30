@@ -102,7 +102,11 @@ function ProjectLinks({
   compact?: boolean;
 }) {
   return (
-    <div className={`flex flex-wrap gap-x-5 gap-y-3 ${compact ? "mt-5" : "mt-6"}`}>
+    <div
+      className={`flex flex-wrap gap-x-5 gap-y-3 ${
+        compact ? "mt-5" : "mt-6"
+      }`}
+    >
       {github && (
         <a
           href={github}
